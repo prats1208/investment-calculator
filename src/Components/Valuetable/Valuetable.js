@@ -14,6 +14,8 @@ const Valuetable = ({
     expectedReturn: expectedReturn,
     duration: duration,
   };
+
+  //component will be re-render whenever dependent inputs/state changes, hence below function gets called on every input change
   const results = calculateInvestmentResults(userInput);
   
   // alternate way of calling function with directly putting args into {} aka object created

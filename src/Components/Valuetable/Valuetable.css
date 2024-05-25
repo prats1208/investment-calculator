@@ -9,7 +9,8 @@ td,th{
 }
 th{
     font-size: 11px;
-    color: rgb(62, 180, 113);
+    color: rgb(62, 180, 113) !important;
+    /* border: none !important; */
 }
 td{
     font-size: 12px;

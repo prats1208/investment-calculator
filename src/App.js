@@ -12,7 +12,7 @@ function App() {
   const [expectedReturn, setExpectedReturn] = useState(6);
   const [duration, setDuration] = useState(10);
 
-
+  const isInputValid = duration >= 1;
 
   return (
     <div className="App d-flex flex-column align-items-center">
@@ -27,12 +27,16 @@ function App() {
         duration={duration}
         setDuration={setDuration}
       />
+      {
+        isInputValid ? 
+      
       <Valuetable
         initialInvestment={initialInvestment}
         annualInvestment={annualInvestment}
         expectedReturn={expectedReturn}
         duration={duration}
-      />
+      /> : <p className="mt-5 fw-bold">Duration cannot be negative or 0, so please enter correct input</p>
+      }
     </div>
   );
 }

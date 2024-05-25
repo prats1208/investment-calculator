@@ -1,0 +1,24 @@
+.calcdiv{
+    background-image: linear-gradient(seagreen, rgb(62, 160, 105),rgb(68, 179, 116));
+    width: 40%;
+}
+.calcdiv label{
+    font-size: 11px;
+    color: white;
+}
+.calcdiv input{
+    background-color: transparent;
+    color: white;
+    border-color: black;
+    border: 0.1px solid rgb(194, 192, 188);
+}
+.calcdiv input:focus{
+    outline: none;
+    box-shadow: none;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
